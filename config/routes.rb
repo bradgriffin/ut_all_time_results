@@ -1,4 +1,6 @@
 UtAllTimeResults::Application.routes.draw do
+  resources :locations
+
   resources :seasons
 
   resources :opponents
