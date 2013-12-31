@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @game.date %>
+</p>
+
+<p>
+  <strong>Ut score:</strong>
+  <%= @game.ut_score %>
+</p>
+
+<p>
+  <strong>Opponent score:</strong>
+  <%= @game.opponent_score %>
+</p>
+
+<p>
+  <strong>Season:</strong>
+  <%= @game.season_id %>
+</p>
+
+<p>
+  <strong>Opponent:</strong>
+  <%= @game.opponent_id %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @game.location_id %>
+</p>
+
+<p>
+  <strong>Ut rank:</strong>
+  <%= @game.ut_rank %>
+</p>
+
+<p>
+  <strong>Opponent rank:</strong>
+  <%= @game.opponent_rank %>
+</p>
+
+<p>
+  <strong>Result:</strong>
+  <%= @game.result_id %>
+</p>
+
+<p>
+  <strong>Coach:</strong>
+  <%= @game.coach_id %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>
