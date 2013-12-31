@@ -1,0 +1,27 @@
+<h1>Listing opponents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>School name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @opponents.each do |opponent| %>
+      <tr>
+        <td><%= opponent.school_name %></td>
+        <td><%= link_to 'Show', opponent %></td>
+        <td><%= link_to 'Edit', edit_opponent_path(opponent) %></td>
+        <td><%= link_to 'Destroy', opponent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Opponent', new_opponent_path %>

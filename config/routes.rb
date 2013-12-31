@@ -1,4 +1,6 @@
 UtAllTimeResults::Application.routes.draw do
+  resources :opponents
+
   resources :coaches
 
   # The priority is based upon order of creation: first created -> highest priority.
